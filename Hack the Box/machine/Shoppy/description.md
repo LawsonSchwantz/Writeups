@@ -1,46 +1,46 @@
 1. Run nmap to discover any open ports and services from the web server.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/8a09e7fe-58ff-4b91-84bc-7cf16d2bac51)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/40d73772-c5bc-4f4d-929b-998e34ba0622)
 
 2. Try to open the ip address in web browser and it directs to shoppy.htb.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/1146f2c1-249d-476f-b22d-21a1c0e12662)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/10e94db5-91b3-4d1c-b3a0-125e4f384cca)
 
 3. We need to add shoppy.htb to /etc/hosts with the corresponding IP and the website looks like this.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/45558ca9-0933-4803-b18a-d39d102c2e90)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/34d77028-c8f6-40cf-823e-e4992c0a8240)
 
 Website:<br>
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/b4b29ca1-aaed-45b9-8aa2-f64f38697181)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/57626ee2-0749-4c5d-a271-41e8398af1ab)
 
 4. It says that there is a shoppey beta that will release in 53 days. We guess that ther is a subdomain in the IP address. To check it, we run `wfuzz -u http://10.10.11.180 -H "Host: FUZZ.shoppy.htb" -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/ccfbe1a1-fadb-45d8-8483-a035acb08f05)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e7f43f5f-aea0-42dd-a4b6-288d0af20999)
 
 5. The average response are 169 character only, to filter, we can add --hh 169 which means ignore any word with the character length of 169 and run `wfuzz -u http://10.10.11.180 -H "Host: FUZZ.shoppy.htb" -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt --hh 169` (the top5000.txt doesn't give any result)
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/0dc5ba0e-ed48-4395-b5d2-b9cac4870890)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e507529e-c4c3-4448-a77a-dc1ea25210d0)
 
 6. From wfuzz we get one match named **mattermost**. The website looks like this.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/bf329604-4dec-4759-ad4d-51ba643d0025)
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/c0731c8b-8c41-41ac-8d23-3204bff460e0)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/7f939765-e3fa-46b4-89d6-73d51bee288b)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/8e292a95-313b-46ad-a391-7bec0c3ef5b8)
 
 7. Because it's start from login page, we have to find any interesting things in the main website (shoppy.htb) with feroxbuster. We found 2 admin endpoints which caught our attention.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/d703c74e-1216-472f-821f-b5d4852f4a93)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/cd8cab5f-752f-46d6-a4f0-8d3330b4a1ba)
 
 8. When we opened, it redirects to login page. 
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/300a1e16-d683-4f9c-b6bd-887a8f507664)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/14f52f2c-d748-446c-beb7-6d2795b6f213)
 
 9. First thought is SQL Injection so let's try this payload `username=admin' OR 1=1 -- &password=aaa`
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/9b86f97c-6251-45fd-9190-4071933bcaa6)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/f4a7c690-f863-4013-a905-318d833101cf)
 
 10. It returns error 504. Try all SQL Injection payload and it doesn't work. Next idea is NoSQL Injection with this payload `username[$ne]=admin&password[$ne]=aaa` but still not work. Try one by one NoSQL Injection payload and finally, one payload is working `username=admin' || '1'=='1&password=aaa`. We're redirecting to admin page after that.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/757aea75-d340-42b4-9665-7d16f81c8311)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/66bb38c7-b403-4aca-ac55-53b88c0f1867)
 
 Admin Dashboard:
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/688b73fd-7de8-47e6-920b-7caddb68c52f)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/cd15260d-4171-4f90-8b88-4933fd0254ff)
 
 11. Next one is check the search feature. It exports the user's id, username, and password in MD5 that we searched.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/b3a12ae8-eec1-42ab-ba0f-c5c507db8821)
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/6b8075ef-4ee5-4d23-8d61-0cdc670e2fea)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/df1fbc85-020e-46c6-90fc-3c383701ae0a)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/8b875f06-f447-45f7-a8b0-87226f5438f7)
 
 12. Still related to NoSQL Injection, we try this payload `admin' || '1'=='1` to get all data from database. 
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/e24d084b-fda5-43b1-8091-794f90f08269)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/cd09f001-092d-433a-bee4-75e1b3245271)
 
 13. We get user John and his MD5 password hash and decrack it with this [tool](https://crackstation.net/).
 
@@ -48,10 +48,10 @@ Data: <br>
 user: josh <br>
 password: remembermethisway
 
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/1132f869-15c0-427e-b899-f5f76e202646)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4d702db9-dc13-4378-a55e-972d191b3f24)
 
 14. Back to mattermost subdomain and do login with user Josh. We see a chat page.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/f6de7238-7ee5-4dd1-9a5b-a6649e20041b)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/62f67dcd-7724-4fee-a452-e225b3c035e3)
 
 15. Analyze the channel and discover an important message about account disclosure.
 
@@ -59,32 +59,32 @@ Data: <br>
 user: Jaeger <br>
 password: Sh0ppyBest@pp!
 
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/1d7ab60d-fa80-4c97-a11b-d91dd2c49021)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/b1f9cc3e-f40d-4bcd-b610-7a5aa5313681)
 
 16. Do login to user jaeger with ssh and found the user flag in user.txt.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/5e18aeaf-c3a4-47eb-affd-5f1a0d221cd9)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4ce8603e-aabf-45d6-ab52-ba0720936d06)
 
 17. It's not over, we still analyze another channel to find another useful information. The results are there are two chats that discuss about docker and deploy a password manager.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/122e453d-c7cb-46ec-ad5d-c9b36d630e76)
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/bd04bf81-a033-4fe2-a964-ed60434def93)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/0cda35a2-79ac-4f97-b7d8-ef2cc8cc947a)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/f97f2ebd-9f02-4ec3-916d-edfee709e221)
 
-19. Check sudo permission that Jaeger has.<br>
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/06e85719-0aa3-49b2-a6b1-eb228425786d)
+18. Check sudo permission that Jaeger has.<br>
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d5b119f6-fa3f-4d15-997f-d09603e46266)
 
-20. Right, that's what Josh said. We can run `sudo -u deploy /home/deploy/password-manager` to execute the file. Try to input Jaeger password and it's says Access Denied!
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/a8cab13b-fc0b-45a7-88e6-99558c7a0f6a)
+19. Right, that's what Josh said. We can run `sudo -u deploy /home/deploy/password-manager` to execute the file. Try to input Jaeger password and it's says Access Denied!
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4be9630d-d203-49fe-9247-d7fb04329859)
 
-21. We can use scp for copy the file to our terminal.
+20. We can use scp for copy the file to our terminal.
 ![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/1be878c3-1bb6-4f25-97e7-215bffd93da6)
 
-22. Check the file type with `file` and it's ELF 64 Bit.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/a6c00f97-c239-4b97-b0db-7d084f711105)
+21. Check the file type with `file` and it's ELF 64 Bit.
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/c86b12df-c694-4d67-a763-23d7fdf43f35)
 
-23. We're decompiling the file using IDA and found the password in the main function.
+22. We're decompiling the file using IDA and found the password in the main function.
 
 Master Password: Sample<br>
 
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/81e9b4b3-9a48-42aa-9a64-a7b112e1ea7f)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/86811ea3-60c2-4d24-b65f-5114bc8c1d13)
 
 23. Run again the password-manager and input the passowrd. Thus, we get new user's creds.
 
@@ -92,13 +92,13 @@ Data: <br>
 username: deploy<br>
 password: Deploying@pp!
 
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/d7af1b82-e134-43fc-bb4a-0c8ecc7b0f09)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/98075ce2-d462-46b4-87b0-e1b20484cf5a)
 
 24. Login the deploy user with ssh. Related to the information before, Josh using docker for his deployment so we check any attributes related to docker (container & images).<br>
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/fec78cdd-bdfb-4570-b56a-be4e471b7103)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/3578e3b9-969c-4eb2-8cab-bb1191c1a4c8)
 
 25. Found 1 image name alpine and we can copy the root directory content from deploy terminal to alpine using command `docker run -it -v /root:/root alpine`. The root flag can be find in /root/root.txt.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/c8e0dc7c-7d80-49f9-9c50-dad687db7b9e)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/44e3b93e-1072-497c-85d2-8a4fe39bfc4a)
 
 
 
