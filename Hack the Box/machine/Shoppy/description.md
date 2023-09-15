@@ -71,7 +71,7 @@ password: Sh0ppyBest@pp!
 18. Check sudo permission that Jaeger has.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d5b119f6-fa3f-4d15-997f-d09603e46266)
 
-19. Right, that's what Josh said. We can run `sudo -u deploy /home/deploy/password-manager` to execute the file. Try to input Jaeger password and it's says Access Denied!
+19. Right, that's what Josh said. We can run `sudo -u deploy /home/deploy/password-manager` to execute the file. Try to input Jaeger password and it's says Access Denied!<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4be9630d-d203-49fe-9247-d7fb04329859)
 
 20. We can use scp for copy the file to our terminal.
