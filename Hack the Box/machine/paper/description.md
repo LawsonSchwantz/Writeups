@@ -1,20 +1,20 @@
 1. Run nmap to discover some open ports and services from the web server.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/41bed124-45ce-4438-9bd6-1b9b1ed1f171)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/06bc8094-0cfc-4865-a091-f5194dd4eb66)
 
 2. Try to open the ip address in the browser and it shows only http default page.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/fb85c674-a6db-4b68-bb79-b1cacf7ff7ce)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/0e09f15b-da32-42cb-b8e4-52d29dc52d81)
 
 3. Using burp suite to find any interesting information and we found the backend server with named `office.paper`.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/f5c611a0-ab84-45bc-9565-3289c9c8f70a)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/2490612e-5c7a-4b7a-a07e-9b08ab4a38fc)
 
 4. To open it, we add this server to /etc/hosts with the corresponding ip address.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/97a236d8-4506-4f4d-aebd-0b5a0e81ab1c)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/995aa100-5bb2-4f7b-bf2b-fb8e288b16dc)
 
 5. The web server looks like this
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/aa8a3a36-354d-4664-ab22-ee42bb80fe7b)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4d8efffd-5ea7-4a46-afa3-c7a46ae5e9d8)
 
 6. I check the uppermost post and it says that there is a secret content that Michael needs to look at.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/751c23d1-016e-44ae-a812-00f220d2e256)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/b3b50d4d-6b68-4bcd-a832-ea82652ea6ff)
 
 7. This indicates that the website using wordpress to running their services. Next, we can check the wordpress version using Wappalyzer and it shows that it uses WordPress 5.2.3.
 ![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/2f44097b-ccbe-424b-8157-9158d4467724)
