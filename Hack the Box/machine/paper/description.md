@@ -40,7 +40,7 @@
 14. We found that the files and list command are the most interesting one. Let's try send `list ..` to check it (similar to ls .. in linux).
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d29fccc1-fde9-4757-9060-53ea45331c04)
 
-15. There is a user.txt in there. Try to grab it with file command and it says access denied.
+15. There is a user.txt in there. Try to grab it with file command and it says access denied.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4f9861a0-dcab-4c32-a268-90ae1cbfbbbe)
 
 16. We need to find another way to open that file. Analyze the `list ..` content and discover a hubot file. Try to find a thing related to hubot and get this [link](https://github.com/RocketChat/hubot-rocketchat). 
