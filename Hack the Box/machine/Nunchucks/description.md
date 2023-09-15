@@ -1,4 +1,4 @@
-![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/0b4fe793-b8b7-499f-9dc3-0d7f2dbc42a5)1.
+1.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/3b7b1e08-e98c-4497-9520-1f112bb70c54)
 
 2.
