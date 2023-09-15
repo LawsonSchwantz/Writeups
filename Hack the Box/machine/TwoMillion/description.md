@@ -1,4 +1,4 @@
-![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/64aa6631-b7a8-4377-9bcf-0751ee77a357)1. Run Nmap to check which port is opened from the website.
+1. Run Nmap to check which port is opened from the website.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/35f857a9-b6c5-4ec1-9317-dd0dcea44fc3)
 
 2. Add Vhost to /etc/hosts with named 2million.htb so we are able to see the website's content. <br>
