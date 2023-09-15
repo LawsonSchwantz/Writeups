@@ -1,4 +1,4 @@
-![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/f7ae2868-c424-4353-8b75-570a8e10ee20)1. Run nmap to discover some ports and services from the web server.
+1. Run nmap to discover some ports and services from the web server.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/59f9a342-47d6-473b-b184-7ebe6f967818)
 
 2. If we open port 80, we can see the furniture store website.
