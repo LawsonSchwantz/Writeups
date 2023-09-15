@@ -75,7 +75,7 @@ password: Sh0ppyBest@pp!
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4be9630d-d203-49fe-9247-d7fb04329859)
 
 20. We can use scp for copy the file to our terminal.
-
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/88579041-3748-44c7-873b-b6eeab1229cf)
 
 21. Check the file type with `file` and it's ELF 64 Bit.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/c86b12df-c694-4d67-a763-23d7fdf43f35)
