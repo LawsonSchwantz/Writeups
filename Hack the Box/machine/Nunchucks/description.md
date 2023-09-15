@@ -20,7 +20,7 @@ Login:
 5. `wfuzz -u http://10.10.11.122 -H "Host: FUZZ.nunchuks.htb" -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt`
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/2be32578-1018-4f23-b5b4-5ab762463415)
 
-6. `wfuzz -u http://10.10.11.122 -H "Host: FUZZ.nunchuks.htb" -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -hh 178`
+6. `wfuzz -u http://10.10.11.122 -H "Host: FUZZ.nunchuks.htb" -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt --hh 178`
 
 
 
