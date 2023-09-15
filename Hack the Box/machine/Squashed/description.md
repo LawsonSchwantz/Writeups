@@ -1,4 +1,4 @@
-1. Run nmap to discover some ports and services from the web server.
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/f7ae2868-c424-4353-8b75-570a8e10ee20)1. Run nmap to discover some ports and services from the web server.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/59f9a342-47d6-473b-b184-7ebe6f967818)
 
 2. If we open port 80, we can see the furniture store website.
@@ -57,15 +57,16 @@
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/18994d42-b307-4a85-9de4-4c2341e0ab7f)
 
 19. From the session, the display that user Ross uses is :0. According to this [source](https://book.hacktricks.xyz/network-services-pentesting/6000-pentesting-x11#screenshots-capturing), we use xwd -root -screen -silent -display <user's display> to take the X content to our terminal where xwd (X Window Dump) is a tool to take a screenshot and save it from X window system (X11). We save the file as result.xwd.  
-
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/1169db95-90fa-4c3c-90f3-e5292aefc75e)
 
 20. We want to move this result.xwd into our local terminal. To do that, we use netcat where alex send to my terminal so I can open the file.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/e403122c-a891-4758-a8b7-500346f3e146)
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/1f6c044e-fa7e-4cbb-b6f4-eca4fdc6af64)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/c8c2b950-426f-4198-aa4b-4b24f288b83b)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/8be68a86-f6fd-47a4-85f0-7f9f2cf01263)
 
 21. The output file is meant to be an image. Convert the file into image file (.png or .jpg or .jpeg). After that, open the file and we get the root password!
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/5788a3d5-9dfa-4fd4-baf7-33ee0d7952ec)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/7d599ee2-dded-4aa1-b212-35af0a471525)
 
 22. Run su inside alex terminal and input the root password. Flag is located in /root/root.txt.
-![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/724da30e-15a4-42cc-b170-d61f3cdeed3b)
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4995a813-706a-409a-9830-80b693bea18f)
+
 
