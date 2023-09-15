@@ -81,7 +81,7 @@ Host:
 
 18. [web](https://gtfobins.github.io/gtfobins/perl/#capabilities)
 
-Checking perl location:
+Checking perl location:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/09cb1ea2-5587-451a-86b9-0c4ffcc96e24)
 
 Payload:
