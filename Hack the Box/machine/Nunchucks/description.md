@@ -102,6 +102,7 @@ exec "/bin/sh";' > root.pl`
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d65db7ba-066e-434b-9423-40489e487a8a)
 
 22.
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/dc418505-95f3-4189-9d53-02b84c690307)
 
 
 
