@@ -1,20 +1,20 @@
-1.
+1. Run Nmap to discover any open ports and services from the web server.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/3b7b1e08-e98c-4497-9520-1f112bb70c54)
 
-2.
+2. Try to open the ip address on the browser and get a domain nunchuks.htb. Add to **/etc/hosts/** so we can open the website.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/2004824b-ce1f-4e81-b032-03b5694d6474)
 
 Website:
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d4f64624-14ea-43cd-882b-7cdaaa998424)
 
-3.
+3. Checking the Sign Up and Log In feature and can't use both of them.
 Signup:
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/85432824-3fef-4900-92b1-8b8eed99f263)
 
 Login:
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d2ddddb7-8d36-46b5-96d0-c720828e2f84)
 
-4.
+4. Checking another website features and contents. In the footer, we found that 
 ![image](https://github.com/LawsonSchwantz/CTF-Writeups/assets/74954683/2977a9df-af8d-4698-bc24-d9f76fafe823)
 
 5. `wfuzz -u https://nunchucks.htb/ -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt  -H "Host: FUZZ.nunchucks.htb"`
