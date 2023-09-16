@@ -104,7 +104,7 @@ exec "/bin/sh";' > root.pl`<br>
 
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/05c7b034-7aab-4506-ae20-7a13e9f1a04c)
 
-20. Give execute permission to the file.
+20. Give execute permission to the file.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/d65db7ba-066e-434b-9423-40489e487a8a)
 
 22. Run the payload and we get the root privilege. The root flag can be found in /root/root.txt.
