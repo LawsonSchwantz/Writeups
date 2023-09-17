@@ -10,7 +10,7 @@
 4. For the payload, I use from this [link](https://www.rapid7.com/db/modules/exploit/windows/http/rejetto_hfs_exec/) with metasploit. Set LHOST for our ip address (tun0) and RHOSTS for target IP.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/134947b0-5a7d-4d08-b166-64080bdb4466)
 
-5. Run shell and get the flag in user.txt file.
+5. Run shell and get the flag in user.txt file.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/acf16788-91f1-462c-b6b4-52f130335529)
 
 6. Cheking one by one directories and found nothing, I decided to check the system info for any information. I found that the system use Microsoft Windows Server 2012 R2.
@@ -29,7 +29,7 @@
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/45d03b01-02be-4dd9-bbba-c511b372418e)
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/ab82f06d-6ca2-47cb-8ee5-8952f6da0d41)
 
-11. Run and the root flag can be found in root.txt file.
+11. Run and the root flag can be found in root.txt file.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/a92a4867-4303-40db-be0c-ad7fa7e6dd18)
 
 
