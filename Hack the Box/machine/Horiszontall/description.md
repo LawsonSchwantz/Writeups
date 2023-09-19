@@ -100,7 +100,7 @@ Run:<br>
 Host:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/386a20da-85df-4c58-910c-52a520343750)
 
-25. The root flag is in **/root/root.txt**.
+25. The root flag is in **/root/root.txt**. <br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e4f06518-68ce-405f-ba5f-94b54c7c8b57)
 
 
