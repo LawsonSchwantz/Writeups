@@ -1,19 +1,19 @@
 1. Run Nmap to scan any open ports and services from the web.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e168f3ae-fdca-40c6-a64c-4a4cf64ed6c0)
 
-2. Input the ip address in the browser and it directs to horizontall.htb. I add it to /etc/hosts/ so I can open it.
+2. Open the ip address in the browser and it directs to horizontall.htb. I add it to /etc/hosts/ so I can open it.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/fa4cf0d4-22af-4da5-8d5b-e704b4493a39)
 
 Website:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/777e5607-7645-40ec-af91-af3bcfbdf6d0)
 
-3. 
+3. The feature isn't showing any interesting things. Next things is check the source code and I found a unique js file.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e0940e2b-5f55-446b-9e1f-fd33608cff5e)
 
 Content: <br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4200360b-ca33-4ddd-a525-af725b5feb74)
 
-4. [tool](https://beautifier.io/)
+4. We can beautify with this [tool](https://beautifier.io/) and found a new api endpoint.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/b6547f97-6b75-4ed9-b248-5c5649ded97c)
 
 5.
