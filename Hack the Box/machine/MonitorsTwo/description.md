@@ -24,7 +24,7 @@ Shell:
 8.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/24e79eeb-4bcf-4a03-84c3-fdeaf102889f)
 
-9. `find / -perm /4000 2>/dev/null`
+9. `find / -perm /4000 2>/dev/null`. <br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/76c58328-0b8d-488a-8a1c-a95bbea53a74)
 
 10. `capsh --gid=0 --uid=0 --`<br>
