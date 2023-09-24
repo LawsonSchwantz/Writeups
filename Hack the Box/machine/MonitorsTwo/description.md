@@ -1,4 +1,5 @@
 1.
+![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/c899fefd-379f-4c16-8202-4f31dfc836ea)
 
 2.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/14d48b0b-6529-472e-b1ef-392b75093669)
