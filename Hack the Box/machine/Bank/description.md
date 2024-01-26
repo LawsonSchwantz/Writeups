@@ -1,19 +1,19 @@
-1.
+1. Run nmap to discover some open ports and services from the web server. Unfortunately, It doesn't work :(
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/444b5f7e-77a0-4fa8-9436-7f7362b919da)
 
-2. 
+2. Let's move to the next step, I try to input the ip address and it refers to domain bank.htb. Add to **/etc/hosts/** so I can open the website.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/3a8d03ce-6644-4a77-b25a-62a37f81fe5e)
 
 Website:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/4d75ea1a-0ee0-4043-ab12-1c4723a417d8)
 
-3.
+3. I try to discover some paths with Feroxbuster and found nothing interesting.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/56060574-586b-49e9-8c89-11767235897c)
 
-4.
+4. Next, I use Gobuster to helps me for checking the paths.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/983c2b5d-6a77-42e9-9212-9432426c9f91)
 
-5.
+5. After waiting for a hour (I don't know why my Gobuster is running slowly), I discover an interesting path named balance-transfer which contains some files that been encrypted before. 
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/9a5fd218-6ba1-43a9-bf26-197780120082)
 
 6.
