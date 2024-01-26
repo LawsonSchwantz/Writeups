@@ -16,10 +16,10 @@ Website:<br>
 5. After waiting for a hour (I don't know why my Gobuster is running slowly), I discover an interesting path named balance-transfer which contains some files that been encrypted before. 
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/9a5fd218-6ba1-43a9-bf26-197780120082)
 
-6.
+6. Checking one by one the file configuration and found there is one file that has a very small size.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/16f79c16-d0b8-4b3b-9ca4-1fe5490f989b)
 
-7.
+7. Try to open it and discover that there is email and password inside the file. Let's login with the credentials!
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/80db165b-156a-4cda-9a1c-44d05e9b3af2)
 
 **Email**: chris@bank.htb<br>
@@ -28,12 +28,11 @@ Website:<br>
 After Login:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/2b1071fd-84a8-462b-bb0f-950a338d076e)
 
-8.
+8. There are only 2 features inside (Dashboard and Support). In dashboard, I found nothing important information so I try to check Support Feature.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/398599ce-83cd-4721-8f86-349407801036)
 
-9.
+9. There are 3 inputs inside and one of them is file uploading. When I checked the source code, there is no validation related to file extension.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/0d186ff2-f5d8-4718-a7b9-eaa3b7333197)
-
 
 10. [link](https://www.revshells.com/)
 
