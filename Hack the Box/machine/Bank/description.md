@@ -22,8 +22,8 @@ Website:<br>
 7.
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/80db165b-156a-4cda-9a1c-44d05e9b3af2)
 
-Email:chris@bank.htb<br>
-Password:!##HTBB4nkP4ssw0rd!##<br>
+**Email**: chris@bank.htb<br>
+**Password**: !##HTBB4nkP4ssw0rd!##<br>
 
 After Login:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/2b1071fd-84a8-462b-bb0f-950a338d076e)
