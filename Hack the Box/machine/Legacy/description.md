@@ -7,13 +7,13 @@
 3. To do so, I use metasploit for the payload and input the victim IP Address. 
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/791aace6-385b-40a2-be7c-edc493da5429)
 
-4. Run the script and it successfuly enters the meterpreter. To use the windows shell, just type shell in the meterpreter.
+4. Run the script and it successfuly enters the meterpreter. To use the windows shell, just type shell in the meterpreter.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/9c986d98-4dc7-4e3f-9239-17b2a21d9cbf)
 
-5. The user flag is found in /John/Dekstop/user.txt.
+5. The user flag is found in /John/Dekstop/user.txt.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/9a8f3b1e-d51e-4aab-904e-a77a05b56299)
 
-6. The root flag is found in /Administrator/Desktop/root.txt.
+6. The root flag is found in /Administrator/Desktop/root.txt.<br>
 ![image](https://github.com/LawsonSchwantz/Writeups/assets/74954683/907c970e-4419-4c4f-a4ea-348eec254803)
 
 
