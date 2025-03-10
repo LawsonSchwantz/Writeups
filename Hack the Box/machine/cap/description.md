@@ -16,7 +16,7 @@ Password: Buck3tH4TF0RM3!**
 ![image](https://github.com/user-attachments/assets/93bf5134-d4dd-4dde-b7dd-d20e34f21152) <br>
 8. Now I run linpeas.sh inside the target machine to discover any vulnerability inside the machine.
 ![image](https://github.com/user-attachments/assets/59d262b0-7048-440f-a2c2-5a7ab661d1b9) <br>
-9. It shows that there is capability vulnerability from the server and check it from GTOBins. It gives privilege escalation payload below.
+9. It shows that there is capability vulnerability from the server and check it from GTFOBins. It gives privilege escalation payload below.
 ![image](https://github.com/user-attachments/assets/afe263c7-cffe-483c-915d-5d428a0a0e80) <br>
 10. Run the payload and I successfully gain the root privilege. The root flag is stored in /root/root.txt.
 ![image](https://github.com/user-attachments/assets/7cbc8145-0590-4d67-b330-7161aa49312a) <br>
