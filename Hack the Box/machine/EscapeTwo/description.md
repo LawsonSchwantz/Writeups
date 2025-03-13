@@ -44,10 +44,15 @@ Pass: MSSQLP@ssw0rd!** <br>
 20.
 ![image](https://github.com/user-attachments/assets/731b3cf8-de45-4bd6-b8c7-08147ffa86be)
 21.
-Command: certipy-ad find -u ca_svc@sequel.htb -hashes :3b181b914e7a9d5508ea1e20bc2b7fce -stdout -vulnerable -dc-ip 10.10.11.5
-
+Command: certipy-ad find -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -stdout -vulnerable -dc-ip 10.10.11.5
+![image](https://github.com/user-attachments/assets/e45bc444-bfc7-4575-941a-788278fb4534)
 22.
-
+![image](https://github.com/user-attachments/assets/9382011b-a148-4836-b8e9-1591a21b1640)
+![image](https://github.com/user-attachments/assets/ff77a274-da25-46bf-ab8a-8f712465ead9)
+23.
+![image](https://github.com/user-attachments/assets/c8bed7cb-2cee-40f7-b796-315d3ef9d60a)
+24.
+![Uploading image.png…]()
 
 
 
