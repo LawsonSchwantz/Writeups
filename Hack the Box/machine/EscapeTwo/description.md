@@ -30,7 +30,7 @@ Pass: MSSQLP@ssw0rd!** <br>
 14.
 ![image](https://github.com/user-attachments/assets/db9e5416-a772-4ec7-a459-95d937931505)
 15.
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/6477e286-4610-433b-926d-84c163f148ad)
 16.
 
 
