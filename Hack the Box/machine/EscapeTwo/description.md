@@ -1,8 +1,8 @@
-1.
+1. Run nmap to discover any open ports from the server target.
 ![image](https://github.com/user-attachments/assets/f90abc9f-bf3f-450c-a918-00389b8a00f6)
 ![image](https://github.com/user-attachments/assets/3d80583d-64f8-4823-9af6-d09fa11f6ee4)
-2. rose / KxEPkKe6R8su
-3. 
+2. Given from the description for the initial credential: **rose / KxEPkKe6R8su**
+3. Because port 445 is open, I tried to use the provided credential into server SMB service and it works.
 ![image](https://github.com/user-attachments/assets/a829b55f-3682-4276-b6ec-24b2fa1e2347)
 4.
 ![image](https://github.com/user-attachments/assets/9c27146a-0807-403b-9000-f80095be2370)
