@@ -52,6 +52,8 @@ Pass: MSSQLP@ssw0rd!** <br>
 23. Authenticate using pfx file into the target domain and I'm obtain the administrator NTLM Hash.
 ![image](https://github.com/user-attachments/assets/c8bed7cb-2cee-40f7-b796-315d3ef9d60a)
 24. With the NTLM Hash, logs in as the Administrator using evil-rm and the flag is stored in root.txt
+![image](https://github.com/user-attachments/assets/1234343f-c6a3-4cbf-91fb-547d5c33cb13)
+
 
 
 
