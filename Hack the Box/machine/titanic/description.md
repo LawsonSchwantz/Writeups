@@ -26,11 +26,18 @@
 13. https://github.com/unix-ninja/hashcat/blob/master/tools/gitea2hashcat.py
 ![image](https://github.com/user-attachments/assets/08aba89f-caf2-4cc8-8c07-37359834f8af)
 14.
-![image](https://github.com/user-attachments/assets/ffa9691f-5c2c-4a4d-b5bc-e7e3c59154c9)
-
-
-
-
+![image](https://github.com/user-attachments/assets/44b8defd-9568-4241-b0b1-52fd8578cbd5)
+15.
+**Pass Developer Account: 25282528**
+![image](https://github.com/user-attachments/assets/34d21f2d-c436-4332-b9ee-38e2add7fff8)
+16.
+![image](https://github.com/user-attachments/assets/eddbd5b6-fcf5-4261-9b7e-9ba829365cd7)
+17.
+![image](https://github.com/user-attachments/assets/baa04430-f13d-415a-b9ef-cfff22c4a850)
+18.
+![image](https://github.com/user-attachments/assets/75eb6c75-8fb0-4a71-b60f-b99f705963fa)
+19.
+![image](https://github.com/user-attachments/assets/b45d28a6-819a-4fd2-a585-6d5151f11e7d)
 
 
 
