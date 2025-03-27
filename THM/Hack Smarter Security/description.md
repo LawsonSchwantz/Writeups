@@ -23,7 +23,7 @@
 ![image](https://github.com/user-attachments/assets/54bbe27c-28be-491f-989a-b166fd92114e)
 ![image](https://github.com/user-attachments/assets/77594fad-14ad-4e89-a825-c778d21d2164)
 12.
-**Script: . .\priv.ps1; Invoke-PrivescCheck -Extended**
+**Script: . .\priv.ps1; Invoke-PrivescCheck -Extended** <br>
 ![image](https://github.com/user-attachments/assets/daf6e285-bb73-48c0-9238-b005577d41a2)
 13.
 ![image](https://github.com/user-attachments/assets/4cd23fdb-ccc4-45f0-b8f8-543ec5c9a0e4)
