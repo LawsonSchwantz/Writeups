@@ -23,7 +23,7 @@
 ![image](https://github.com/user-attachments/assets/3f19662a-5abd-44b8-9a28-8905f8791bea)
 12. Check user table and it shows gitea hash and the salt inside each user credentials.
 ![image](https://github.com/user-attachments/assets/461ed8f3-1a85-466a-9753-c4c4a011e6a6)
-13. Now, I must bruteforce the hash to obtain the password. First, I use (this script)[https://github.com/unix-ninja/hashcat/blob/master/tools/gitea2hashcat.py] to change the hash into hashcat readable format.
+13. Now, I must bruteforce the hash to obtain the password. First, I use [this script](https://github.com/unix-ninja/hashcat/blob/master/tools/gitea2hashcat.py) to change the hash into hashcat readable format.
 ![image](https://github.com/user-attachments/assets/08aba89f-caf2-4cc8-8c07-37359834f8af)
 14. Insert the developer's hashcat result into a txt file.
 ![image](https://github.com/user-attachments/assets/44b8defd-9568-4241-b0b1-52fd8578cbd5)
